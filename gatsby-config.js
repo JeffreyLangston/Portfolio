@@ -1,34 +1,63 @@
-module.exports = {
-  siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+const contentful = require('contentful');
+const manifestConfig = require('./manifest-config');
+require('dotenv').config();
+
+const { ACCESS_TOKEN, SPACE_ID, ANALYTICS_ID } = process.env;
+
+const client = contentful.createClient({
+  space: SPACE_ID,
+  accessToken: ACCESS_TOKEN,
+});
+
+const getAboutEntry = entry => entry.sys.contentType.sys.id === 'about';
+
+const plugins = [
+  'gatsby-plugin-react-helmet',
+  {
+    resolve: 'gatsby-plugin-manifest',
+    options: manifestConfig,
   },
-  plugins: [
-    `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
+  'gatsby-plugin-styled-components',
+  {
+    resolve: 'gatsby-plugin-google-fonts',
+    options: {
+      fonts: ['cabin', 'Open Sans'],
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-      },
+  },
+  {
+    resolve: 'gatsby-source-contentful',
+    options: {
+      spaceId: SPACE_ID,
+      accessToken: ACCESS_TOKEN,
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
-  ],
-}
+  },
+  'gatsby-transformer-remark',
+  'gatsby-plugin-offline',
+];
+
+module.exports = client.getEntries().then(entries => {
+  const { mediumUser } = entries.items.find(getAboutEntry).fields;
+
+  plugins.push({
+    resolve: 'gatsby-source-medium',
+    options: {
+      username: mediumUser || '@medium',
+    },
+  });
+
+  if (ANALYTICS_ID) {
+    plugins.push({
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: ANALYTICS_ID,
+      },
+    });
+  }
+
+  return {
+    siteMetadata: {
+      isMediumUserDefined: !!mediumUser,
+    },
+    plugins,
+  };
+});
