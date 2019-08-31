@@ -1,0 +1,157 @@
+<svg id="Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 765.85 425.69">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient-4);
+      }
+
+      .cls-5, .cls-9 {
+        opacity: 0.5;
+      }
+
+      .cls-5 {
+        fill: url(#radial-gradient);
+      }
+
+      .cls-6 {
+        fill: url(#linear-gradient-5);
+      }
+
+      .cls-7 {
+        fill: url(#linear-gradient-6);
+      }
+
+      .cls-8 {
+        fill: url(#linear-gradient-7);
+      }
+
+      .cls-10 {
+        fill: url(#linear-gradient-8);
+      }
+
+      .cls-11 {
+        fill: url(#linear-gradient-9);
+      }
+
+      .cls-12 {
+        fill: url(#linear-gradient-10);
+      }
+
+      .cls-13 {
+        fill: url(#linear-gradient-11);
+      }
+
+      .cls-14 {
+        fill: url(#linear-gradient-12);
+      }
+
+      .cls-15 {
+        fill: url(#linear-gradient-13);
+      }
+
+      .cls-16 {
+        fill: url(#linear-gradient-14);
+      }
+
+      .cls-17 {
+        fill: url(#linear-gradient-15);
+      }
+
+      .cls-18 {
+        fill: url(#linear-gradient-16);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="310.08" y1="386.08" x2="351.95" y2="386.08" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#55ff94"/>
+      <stop offset="1" stop-color="#0098e9"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="310.08" y1="386.08" x2="351.95" y2="386.08" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff905c" stop-opacity="0"/>
+      <stop offset="1" stop-opacity="0.5"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="277.04" y1="386.76" x2="314.63" y2="386.76" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="277.04" y1="386.76" x2="314.63" y2="386.76" xlink:href="#linear-gradient-2"/>
+    <radialGradient id="radial-gradient" cx="878.34" cy="461.92" r="112.57" gradientTransform="translate(-1908.4 160.25) scale(2.61 0.21)" gradientUnits="userSpaceOnUse">
+      <stop offset="0"/>
+      <stop offset="1" stop-color="#f2f2f2" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="linear-gradient-5" x1="135.84" y1="125.6" x2="616.78" y2="135.72" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-6" x1="134.37" y1="104.3" x2="618.02" y2="114.48" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-7" x1="137.08" y1="66.72" x2="618.02" y2="76.84" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-8" x1="291.45" y1="36.69" x2="146.32" y2="107.57" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-9" x1="493.77" y1="80.13" x2="569.15" y2="154.38" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-10" x1="432.31" y1="134.59" x2="515.1" y2="216.15" xlink:href="#linear-gradient-2"/>
+    <linearGradient id="linear-gradient-11" x1="135.7" y1="132.56" x2="616.63" y2="142.68" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-12" x1="136.27" y1="105.37" x2="617.21" y2="115.49" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-13" x1="137.22" y1="60.12" x2="618.16" y2="70.24" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-14" x1="155.54" y1="134.28" x2="277.52" y2="134.28" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffc18a" stop-opacity="0"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0.5"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-15" x1="289.96" y1="110.05" x2="369.89" y2="110.05" xlink:href="#linear-gradient-14"/>
+    <linearGradient id="linear-gradient-16" x1="480.64" y1="35.98" x2="605.52" y2="105.17" xlink:href="#linear-gradient-14"/>
+  </defs>
+  <title>Transparent</title>
+  <g id="Text_Group" data-name="Text Group">
+    <g id="JEFF_LANGSTON" data-name="JEFF LANGSTON">
+      <g>
+        <path d="M606.55,677.57h7.54v50.92q0,11.73-1.82,16.32a15.26,15.26,0,0,1-6.07,7.34,18.72,18.72,0,0,1-10.31,2.74,24.12,24.12,0,0,1-9-1.77,38.16,38.16,0,0,1-9.82-6.23l4-6a58.93,58.93,0,0,0,9.82,5.85,12.49,12.49,0,0,0,5,1.13,9.66,9.66,0,0,0,5.88-2,10.15,10.15,0,0,0,3.7-5.18q1.05-3.22,1-12.51Z" transform="translate(-577.07 -329.2)"/>
+        <path d="M628.77,677.57H672V685H636.31v23.63h35.37V716H636.31v29.63h35.37V753H628.77Z" transform="translate(-577.07 -329.2)"/>
+        <path d="M686.29,677.57h37.78V685H693.83v23.63h30.24V716H693.83v37h-7.54Z" transform="translate(-577.07 -329.2)"/>
+        <path d="M738.48,677.57h37.78V685H746v23.63h30.25V716H746v37h-7.53Z" transform="translate(-577.07 -329.2)"/>
+        <path d="M809,677.57h7.53v68.14h29V753H809Z" transform="translate(-577.07 -329.2)"/>
+        <path d="M937.78,753V677.57h1.64l50.19,57.82V677.57h7.44V753h-1.69l-49.79-57.11V753Z" transform="translate(-577.07 -329.2)"/>
+        <path d="M1082.43,690.24l-5.85,5.54a44.46,44.46,0,0,0-13.81-9.41,37.14,37.14,0,0,0-14.64-3.21,35,35,0,0,0-16.89,4.36,31.71,31.71,0,0,0-12.44,11.82,30.48,30.48,0,0,0-4.4,15.76,31.15,31.15,0,0,0,4.56,16.18,32.36,32.36,0,0,0,12.61,12.05,36.33,36.33,0,0,0,17.64,4.38q11.64,0,19.68-6.56a25.9,25.9,0,0,0,9.54-17h-24v-7.28h32.5q-.11,17.48-10.38,27.76T1049,754.89q-20.91,0-33.12-14.25a37.93,37.93,0,0,1-9.38-25.38,38.94,38.94,0,0,1,5.38-20,38.28,38.28,0,0,1,14.77-14.43,43,43,0,0,1,21.22-5.2,47.13,47.13,0,0,1,18.05,3.46A54,54,0,0,1,1082.43,690.24Z" transform="translate(-577.07 -329.2)"/>
+        <path d="M1091.73,738.94l6.41-3.84q6.77,12.45,15.63,12.46a15,15,0,0,0,7.13-1.77,12.6,12.6,0,0,0,5.08-4.74,12.33,12.33,0,0,0,1.74-6.31,12.81,12.81,0,0,0-2.56-7.43q-3.54-5-12.92-12.1T1100.5,704.9a18.8,18.8,0,0,1-4-11.53,17.53,17.53,0,0,1,2.35-9,16.92,16.92,0,0,1,6.64-6.38,19.22,19.22,0,0,1,9.31-2.33,19.83,19.83,0,0,1,10,2.64q4.63,2.64,9.82,9.71l-6.15,4.67q-4.26-5.64-7.26-7.43a12.47,12.47,0,0,0-6.53-1.8,10.32,10.32,0,0,0-7.46,2.77,9,9,0,0,0-2.9,6.82,11.69,11.69,0,0,0,1,4.77,17.87,17.87,0,0,0,3.75,5q1.49,1.44,9.74,7.54,9.79,7.23,13.43,12.87a20.69,20.69,0,0,1,3.64,11.33,19.23,19.23,0,0,1-6.23,14.25,20.94,20.94,0,0,1-15.15,6,22.2,22.2,0,0,1-12.46-3.67Q1096.45,747.56,1091.73,738.94Z" transform="translate(-577.07 -329.2)"/>
+        <path d="M1145.6,685v-7.39h41.33V685h-16.82v68h-7.69V685Z" transform="translate(-577.07 -329.2)"/>
+        <path d="M1231,675.68q17.13,0,28.67,11.43a39.65,39.65,0,0,1-28.06,67.78,38.61,38.61,0,0,1-28.32-11.49,37.74,37.74,0,0,1-11.54-27.78,40.12,40.12,0,0,1,5.26-20.15,38.82,38.82,0,0,1,34-19.79Zm.33,7.33a31.06,31.06,0,0,0-15.87,4.36,31.44,31.44,0,0,0-11.71,11.75,32.77,32.77,0,0,0-4.21,16.47,31.72,31.72,0,0,0,31.79,32,32.25,32.25,0,0,0,16.25-4.26,30.49,30.49,0,0,0,11.66-11.65,32.72,32.72,0,0,0,4.19-16.42,32,32,0,0,0-4.19-16.24,31.26,31.26,0,0,0-11.79-11.62A31.84,31.84,0,0,0,1231.32,683Z" transform="translate(-577.07 -329.2)"/>
+        <path d="M1283.66,753V677.57h1.64l50.19,57.82V677.57h7.44V753h-1.7l-49.78-57.11V753Z" transform="translate(-577.07 -329.2)"/>
+      </g>
+    </g>
+    <g id="A">
+      <polygon class="cls-1" points="310.69 348.37 318.3 348.37 351.95 423.79 342.23 423.79 314.64 360.24 314.63 360.24 310.08 349.74 310.69 348.37"/>
+      <polygon class="cls-2" points="310.69 348.37 318.3 348.37 351.95 423.79 342.23 423.79 314.64 360.24 314.63 360.24 310.08 349.74 310.69 348.37"/>
+      <polygon class="cls-3" points="294.93 383.7 310.08 349.74 314.63 360.24 314.35 360.24 299.54 394.35 286.76 423.79 277.04 423.79 294.93 383.7"/>
+      <polygon class="cls-4" points="294.93 383.7 310.08 349.74 314.63 360.24 314.35 360.24 299.54 394.35 286.76 423.79 277.04 423.79 294.93 383.7"/>
+    </g>
+  </g>
+  <g id="Drop_Shadow" data-name="Drop Shadow">
+    <ellipse class="cls-5" cx="382.93" cy="256.18" rx="364.43" ry="25.61"/>
+  </g>
+  <g id="Symbol">
+    <g>
+      <g>
+        <polygon class="cls-6" points="610.31 96.33 610.31 110.53 488.33 173.36 488.33 155.22 591.12 103.7 591.12 103.68 608.11 95.2 610.31 96.33"/>
+        <polygon class="cls-7" points="418.83 0 418.83 189.33 423.27 187.11 475.89 160.73 475.89 178.96 423.27 206.04 400.4 217.81 395.96 220.09 395.96 202.46 395.96 200.8 395.96 11.77 418.83 0"/>
+        <polygon class="cls-8" points="212.68 66.9 157.75 95.2 174.73 103.68 174.73 103.17 229.91 75.51 277.52 51.64 277.52 33.5 212.68 66.9"/>
+        <g id="Shadows" class="cls-9">
+          <polygon class="cls-10" points="212.68 66.9 157.75 95.2 174.73 103.68 174.73 103.17 229.91 75.51 277.52 51.64 277.52 33.5 212.68 66.9"/>
+          <polygon class="cls-11" points="610.31 96.33 610.31 110.53 488.33 173.36 488.33 155.22 591.12 103.7 591.12 103.68 608.11 95.2 610.31 96.33"/>
+          <polygon class="cls-12" points="418.83 0 418.83 189.33 423.27 187.11 475.89 160.73 475.89 178.96 423.27 206.04 400.4 217.81 395.96 220.09 395.96 202.46 395.96 200.8 395.96 11.77 418.83 0"/>
+        </g>
+      </g>
+      <g>
+        <polygon class="cls-13" points="155.54 96.33 155.54 110.53 277.52 173.36 277.52 155.22 174.73 103.7 174.73 103.68 157.75 95.2 155.54 96.33"/>
+        <polygon class="cls-14" points="347.02 0 347.02 189.33 342.58 187.11 289.96 160.73 289.96 178.96 342.58 206.04 365.45 217.81 369.89 220.09 369.89 202.46 369.89 200.8 369.89 11.77 347.02 0"/>
+        <polygon class="cls-15" points="553.17 66.9 608.11 95.2 591.12 103.68 591.12 103.17 535.94 75.51 488.33 51.64 488.33 33.5 553.17 66.9"/>
+        <g id="Highlights" class="cls-9">
+          <polygon class="cls-16" points="155.54 96.33 155.54 110.53 277.52 173.36 277.52 155.22 174.73 103.7 174.73 103.68 157.75 95.2 155.54 96.33"/>
+          <polygon class="cls-17" points="347.02 0 347.02 189.33 342.58 187.11 289.96 160.73 289.96 178.96 342.58 206.04 365.45 217.81 369.89 220.09 369.89 202.46 369.89 200.8 369.89 11.77 347.02 0"/>
+          <polygon class="cls-18" points="553.17 66.9 608.11 95.2 591.12 103.68 591.12 103.17 535.94 75.51 488.33 51.64 488.33 33.5 553.17 66.9"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

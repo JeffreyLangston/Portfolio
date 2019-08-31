@@ -2,7 +2,11 @@ const contentful = require('contentful');
 const manifestConfig = require('./manifest-config');
 require('dotenv').config();
 
-const { ACCESS_TOKEN, SPACE_ID, ANALYTICS_ID } = process.env;
+const {
+  ACCESS_TOKEN,
+  SPACE_ID,
+  ANALYTICS_ID
+} = process.env;
 
 const client = contentful.createClient({
   space: SPACE_ID,
@@ -12,6 +16,8 @@ const client = contentful.createClient({
 const getAboutEntry = entry => entry.sys.contentType.sys.id === 'about';
 
 const plugins = [
+  'gatsby-transformer-sharp',
+  'gatsby-plugin-sharp',
   'gatsby-plugin-react-helmet',
   {
     resolve: 'gatsby-plugin-manifest',
@@ -36,7 +42,9 @@ const plugins = [
 ];
 
 module.exports = client.getEntries().then(entries => {
-  const { mediumUser } = entries.items.find(getAboutEntry).fields;
+  const {
+    mediumUser
+  } = entries.items.find(getAboutEntry).fields;
 
   plugins.push({
     resolve: 'gatsby-source-medium',
