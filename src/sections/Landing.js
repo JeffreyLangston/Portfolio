@@ -3,6 +3,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import { Heading, Flex, Box, Text } from 'rebass';
 import TextLoop from 'react-text-loop';
 import { SectionLink } from 'react-scroll-section';
+import Img from 'gatsby-image';
 import Section from '../components/Section';
 import SocialLink from '../components/SocialLink';
 import MouseIcon from '../components/MouseIcon';
@@ -49,6 +50,11 @@ const LandingPage = () => (
           contentfulAbout {
             name
             roles
+            logoBig {
+              fixed {
+                ...GatsbyContentfulFixed
+              }
+            }
             socialLinks {
               id
               url
@@ -59,7 +65,7 @@ const LandingPage = () => (
         }
       `}
       render={data => {
-        const { name, socialLinks, roles } = data.contentfulAbout;
+        const { name, socialLinks, roles, logoBig } = data.contentfulAbout;
 
         return (
           <Fragment>
@@ -70,23 +76,25 @@ const LandingPage = () => (
               fontSize={[5, 6, 8]}
               mb={[3, 4, 5]}
             >
-              {`Hello, I'm ${name}!`}
+              <Img fixed={logoBig.fixed} />
             </Heading>
 
             <Heading
               as="h2"
-              color="primary"
+              color="black"
               fontSize={[4, 5, 6]}
               mb={[3, 5]}
               textAlign="center"
               style={centerHorizontally}
             >
               <TextLoop interval={5000}>
-                {roles.sort(() => Math.random() - 0.5).map(text => (
-                  <Text width={[300, 500]} key={text}>
-                    {text}
-                  </Text>
-                ))}
+                {roles
+                  .sort(() => Math.random() - 0.5)
+                  .map(text => (
+                    <Text width={[300, 500]} key={text}>
+                      {text}
+                    </Text>
+                  ))}
               </TextLoop>
             </Heading>
 
