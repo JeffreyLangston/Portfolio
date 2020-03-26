@@ -3,7 +3,6 @@ import { StaticQuery, graphql } from 'gatsby';
 import { Heading, Flex, Box, Text } from 'rebass';
 import TextLoop from 'react-text-loop';
 import { SectionLink } from 'react-scroll-section';
-import Img from 'gatsby-image';
 import Section from '../components/Section';
 import SocialLink from '../components/SocialLink';
 import MouseIcon from '../components/MouseIcon';
@@ -50,11 +49,6 @@ const LandingPage = () => (
           contentfulAbout {
             name
             roles
-            logoBig {
-              fixed {
-                ...GatsbyContentfulFixed
-              }
-            }
             socialLinks {
               id
               url
@@ -62,10 +56,16 @@ const LandingPage = () => (
               fontAwesomeIcon
             }
           }
+          site {
+            siteMetadata {
+              deterministicBehaviour
+            }
+          }
         }
       `}
-      render={data => {
-        const { name, socialLinks, roles, logoBig } = data.contentfulAbout;
+      render={({ contentfulAbout, site }) => {
+        const { name, socialLinks, roles } = contentfulAbout;
+        const { deterministicBehaviour } = site.siteMetadata;
 
         return (
           <Fragment>
@@ -76,12 +76,12 @@ const LandingPage = () => (
               fontSize={[5, 6, 8]}
               mb={[3, 4, 5]}
             >
-              <Img fixed={logoBig.fixed} />
+              {`Hello, I'm ${name}!`}
             </Heading>
 
             <Heading
               as="h2"
-              color="black"
+              color="primary"
               fontSize={[4, 5, 6]}
               mb={[3, 5]}
               textAlign="center"
@@ -89,7 +89,7 @@ const LandingPage = () => (
             >
               <TextLoop interval={5000}>
                 {roles
-                  .sort(() => Math.random() - 0.5)
+                  .sort(() => deterministicBehaviour || Math.random() - 0.5)
                   .map(text => (
                     <Text width={[300, 500]} key={text}>
                       {text}

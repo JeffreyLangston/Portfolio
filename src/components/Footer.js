@@ -5,7 +5,7 @@ import { Text, Box, Link, Flex } from 'rebass';
 import Fade from 'react-reveal/Fade';
 import SocialLink from './SocialLink';
 
-const FooterContainer = styled.footer`
+const FooterContainer = styled.div`
   min-width: 320px;
   max-width: 1366px;
   display: flex;
@@ -44,15 +44,19 @@ const Footer = () => (
       const { name, socialLinks } = data.contentfulAbout;
 
       return (
-        <Box p={3} backgroundColor="primaryDark">
+        <Box p={3} backgroundColor="primaryDark" as="footer">
           <FooterContainer>
             <Fade left>
-              <TextFooter>
+              <TextFooter fontSize={[2, 3]}>
                 <span>{`${name} Portfolio - Powered by `}</span>
                 <Link href="https://www.gatsbyjs.org/">Gatsby</Link>
-                <span> and </span>
+                <span>, </span>
                 <Link href="https://www.contentful.com/" mr={1}>
                   Contentful
+                </Link>
+                <span> and </span>
+                <Link href="https://www.netlify.com/" mr={1}>
+                  Netlify
                 </Link>
                 <span role="img" aria-label="heart">
                   ❤️
@@ -62,8 +66,8 @@ const Footer = () => (
             <Flex>
               <Fade right>
                 {socialLinks.map(({ id, ...rest }) => (
-                  <Box mx={2} fontSize={4}>
-                    <SocialLink {...rest} alt />
+                  <Box mx={[2, 3]} fontSize={[4, 5]} key={id}>
+                    <SocialLink {...rest} color="background" />
                   </Box>
                 ))}
               </Fade>
